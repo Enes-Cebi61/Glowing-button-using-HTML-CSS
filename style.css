@@ -1,0 +1,54 @@
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/* Button Styles */
+#btn-gra {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 60px;
+  width: 200px;
+  transform: translate(-50%, -50%);
+  font-family: arial black;
+  text-align: center;
+  text-decoration: none;
+  line-height: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 30px;
+  z-index: 1;
+}
+
+/* Hover Effect for Button */
+#btn-gra:hover {
+  color: #fff;
+  text-decoration: none;
+  animation: animate 8s linear infinite;
+}
+
+/* Animation Keyframes */
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+/* Pseudo-element Styles */
+#btn-gra:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
+  z-index: -1;
